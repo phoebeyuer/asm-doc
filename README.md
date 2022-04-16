@@ -5,12 +5,3 @@
 
 ## PC端
 基于vue3+typescript
-
-## 小程序+H5端
-基于uniapp+typescript
-
-## 后台管理系统
-react+antDesign+typescript
-
-## 后台
-node.js+express+typescript
