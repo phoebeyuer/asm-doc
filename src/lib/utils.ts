@@ -3,5 +3,5 @@ export default function baseStaticUrl(src = '') {
   if (src) {
     return `${VITE_APP_STATIC_URL}${src}`
   }
-   return VITE_APP_STATIC_URL as string;
+  return VITE_APP_STATIC_URL as string
 }
