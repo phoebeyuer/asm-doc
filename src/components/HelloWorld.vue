@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 defineProps<{ msg: string }>()
+
+const router = useRouter()
+
+const gotoLogin = () => {
+  console.log('点击了')
+  router.push({ name: 'Login' })
+}
 
 const count = ref(0)
 </script>
@@ -25,7 +33,7 @@ const count = ref(0)
   </p>
 
   <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
+  <p @click="gotoLogin">
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>

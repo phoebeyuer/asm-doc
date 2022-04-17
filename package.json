@@ -12,12 +12,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "axios": "^0.26.1",
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@vitejs/plugin-vue": "^2.3.1",
+    "dart-sass": "^1.25.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -26,13 +31,15 @@
     "lint-staged": "^12.3.8",
     "mrm": "^4.0.0",
     "prettier": "^2.6.2",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.2",
     "vue-tsc": "^0.29.8"
   },
   "lint-staged": {
     "*.{ts,tsx,vue,js,jsx}": [
-			"npm run lint",
+      "npm run lint",
       "prettier --write",
       "git add"
     ]

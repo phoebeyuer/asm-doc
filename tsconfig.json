@@ -5,7 +5,8 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "module": "es2020"
+    "module": "es2020",
+		"lib": ["ES2015"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"]
