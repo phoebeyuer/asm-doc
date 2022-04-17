@@ -7,7 +7,6 @@
     "build": "vue-tsc --noEmit && vite build",
     "staging": "vue-tsc --noEmit && vite build --staging",
     "preview": "vite preview",
-		"commit": "lint-staged",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,jsx",
     "prettier": "prettier --write .",
     "prepare": "husky install"
