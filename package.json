@@ -7,6 +7,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "staging": "vue-tsc --noEmit && vite build --staging",
     "preview": "vite preview",
+		"commit": "lint-staged",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,jsx",
     "prettier": "prettier --write .",
     "prepare": "husky install"
@@ -30,16 +31,11 @@
     "vite": "^2.9.2",
     "vue-tsc": "^0.29.8"
   },
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
   "lint-staged": {
     "*.{ts,tsx,vue,js,jsx}": [
 			"npm run lint",
-			"prettier --write",
-			"git add"
-		]
+      "prettier --write",
+      "git add"
+    ]
   }
 }
