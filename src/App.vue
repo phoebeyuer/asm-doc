@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import bus from '@/lib/bus'
 
-bus.on('test', (e) => console.log(e + '啊哈'))
+bus.on('test', (e) => console.log(e + '啊哈哈'))
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 </script>
