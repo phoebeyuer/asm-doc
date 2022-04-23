@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "types": ["vite/client"],
-    "baseUrl": "src",
+    "types": [
+			"vite/client",
+			"element-plus/global"
+		],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["src/*"]
     },
+		"target": "esnext",
     "module": "es2020",
-		"lib": ["ES2015"]
+		"lib": ["esnext", "dom"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"]
